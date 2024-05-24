@@ -6,12 +6,12 @@
 
 🚀 **New SOTA on CMTEB** 
 
-🔥 最新的通用embedding模型 [sensenova/piccolo-large-zh-v2](https://huggingface.co/sensenova/piccolo-large-zh-v2) 在CMTEB评测榜单上取得了70.95的均分! [2024/4/23] 其中基于大模型训练的Embedding模型已取得68.03的均分。该仓库为Piccolo-GPT的训练pipeline代码，为Piccolo Embedding的一个分支。
+🔥 最新的通用embedding模型 [sensenova/piccolo-large-zh-v2](https://huggingface.co/selmisskilig/piccolo-gpt-zh) 在CMTEB评测榜单上取得了68.02的均分!该仓库为Piccolo-GPT的训练pipeline代码，为Piccolo-Embedding的一个分支。
 
 
 ## 💡Model Highlights
-Piccolo-GPT训练的Piccolo-Grtilm7B在CMTEB榜单上的6项任务的综合评估中超越了大多数模型，目前位于前十位。Piccolo-Grtilm7B主要利用高效的多任务混合损失训练方法，有效地利用来自不同下游任务的文本数据和标签。 
-huggingface上放了最新的模型: https://huggingface.co/sensenova  
+Piccolo-GPT训练的piccolo-gpt-zh在CMTEB榜单上的6项任务的综合评估中超越了大多数模型，目前位于前十位。piccolo-gpt-zh主要利用高效的多任务混合损失训练方法，有效地利用来自不同下游任务的文本数据和标签。 
+huggingface上放了最新的模型: https://huggingface.co/selmisskilig/piccolo-gpt-zh
 对于训练细节，可以参考我们的技术报告: https://arxiv.org/abs/2405.06932
 
 ## 📖 Repo Details
@@ -69,8 +69,7 @@ bash scripts/ft_gpt.sh
 ## 🤗 **Model List**
 | Model|语言||简介|prompt|
 |:-|:-:|:-:|:--------------------------------------------:|:---------:|
-| [sensenova/piccolo-large-zh-v2](https://huggingface.co/sensenova/piccolo-large-zh-v2)                   |    Chinese     |   | version2: 采用了多任务混合损失进行训练 | None |
-|                                                              |         |      |                                        |        |
+| [selmisskilig/piccolo-gpt-zh](https://huggingface.co/selmisskilig/piccolo-gpt-zh)                   |    Chinese     |   | version2: 采用了多任务混合损失进行训练 | None |
 
 
 ## Citation
