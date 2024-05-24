@@ -262,7 +262,6 @@ class UniDataset(Dataset):
         return pair_records
 
     def get_pair_contrast_records(self, records, task_name, hf_dataset, batch_index):
-
         def process_records(record):
             text = record["text"]
             if isinstance(record["text_pos"], list):  # random sample a positive

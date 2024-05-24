@@ -78,7 +78,9 @@ def load_hf_pretrained_model(model_name_or_path: str) -> PreTrainedModel:
     if config.model_type == "t5":
         from transformers import T5EncoderModel
 
-        pretrained_model = T5EncoderModel.from_pretrained(model_name_or_path, trust_remote_code=True)
+        pretrained_model = T5EncoderModel.from_pretrained(
+            model_name_or_path, trust_remote_code=True
+        )
     else:
         pretrained_model = AutoModelForCausalLM.from_pretrained(
             model_name_or_path,
