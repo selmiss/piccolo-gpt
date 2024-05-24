@@ -6,13 +6,13 @@
 
 🚀 **New SOTA on CMTEB** 
 
-🔥 Our general sentence embedding [sensenova/piccolo-large-zh-v2](https://huggingface.co/sensenova/piccolo-large-zh-v2) achieves SOTA on the CMTEB Leaderboard with an average score of 70.95. [2024/4/23] One of the Embedding models based on large model training has achieved an average score of 68.03. The repository is the training pipeline code for Piccolo-GPT, a branch of Piccolo Embedding.
+🔥 Our general sentence embedding [selmisskilig/piccolo-gpt-zh](https://huggingface.co/selmisskilig/piccolo-gpt-zh) achieves SOTA on the CMTEB Leaderboard with an average score of 70.95. [2024/4/23] One of the Embedding models based on large model training has achieved an average score of 68.03. The repository is the training pipeline code for Piccolo-GPT, a branch of Piccolo Embedding.
 
 
 ## 💡Model Highlights
-The Piccolo-GPT-trained Piccolo-Grtilm7B outperforms most of the models in the combined evaluation of the six tasks on the CMTEB list, and is currently in the top 10.Piccolo-Grtilm7B primarily utilises efficient multi-task hybrid loss training methods to effectively exploit text data and labels from different downstream tasks. 
+The Piccolo-GPT-trained piccolo-gpt-zh outperforms most of the models in the combined evaluation of the six tasks on the CMTEB list, and is currently in the top 10. piccolo-gpt-zh primarily utilises efficient multi-task hybrid loss training methods to effectively exploit text data and labels from different downstream tasks. 
 
- For huggingface model, please refer to our space: https://huggingface.co/sensenova  
+ For huggingface model, please refer to our space: [selmisskilig/piccolo-gpt-zh](https://huggingface.co/selmisskilig/piccolo-gpt-zh)
  For training details, please refer to our tech report: https://arxiv.org/abs/2405.06932
 
 ## 📖 Repo Details
@@ -55,7 +55,7 @@ The default proviede scripts is for single-machine training. If you are in a mul
 
 **Training Variables** 
 - MODEL_NAME_OR_PATH: the absolute path of the pretrain model
-- DS_PATH: the deepspeed config, we provide a default config in `./de_config_zero1.json`
+- DS_PATH: the deepspeed config, we provide a default config in `./data_example/deepspeed_config.json`
 - META_PATHS: the list of the dataset. We provide a sample in `meta_lists/piccolo.txt`. Each row consists of two columns: the relative path of the dataset and the number of repeats.
 - ROOT_DIRS: The absolute path of the dataset dir
 
@@ -67,7 +67,7 @@ bash scripts/ft.sh
 ## 🤗 **Model List**
 | Model|Language||Description|prompt|
 |:-|:-:|:-:|:--------------------------------------------:|:---------:|
-| [sensenova/piccolo-large-zh-v2](https://huggingface.co/sensenova/piccolo-large-zh-v2)                   |    Chinese     |   | version2: finetuning with multi-task hybrid loss training | None |
+| [selmisskilig/piccolo-gpt-zh](https://huggingface.co/selmisskilig/piccolo-gpt-zh)                  |    Chinese     |   | finetuning with multi-task hybrid loss training | None |
 |                                                              |          |      |                                                           |        |
 |                                                              |          |      |                                                           |        |
 
