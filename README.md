@@ -68,9 +68,6 @@ bash scripts/ft.sh
 | Model|Language||Description|prompt|
 |:-|:-:|:-:|:--------------------------------------------:|:---------:|
 | [selmisskilig/piccolo-gpt-zh](https://huggingface.co/selmisskilig/piccolo-gpt-zh)                  |    Chinese     |   | finetuning with multi-task hybrid loss training | None |
-|                                                              |          |      |                                                           |        |
-|                                                              |          |      |                                                           |        |
-
 
 ## Citation
 If you find our tech report, models or code helpful, please cite our report or give a star on github or huggingface!  
