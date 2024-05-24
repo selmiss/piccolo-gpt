@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
 **训练参数** 
 - MODEL_NAME_OR_PATH: pretrain model的绝对路径。
-- DS_PATH: deepspeed参数, 默认的config放在了 `./de_config_zero1.json`。
+- DS_PATH: deepspeed参数, 默认的config放在了 `./data_example/deepspeed_config.json`。
 - META_PATHS: 使用的数据集列表. 我们提供了一个样本 `meta_lists/piccolo.txt`. 该txt文件的每一行有两列，第一列是数据集的相对路径，第二列是数据集的repeat次数。
 - ROOT_DIRS: 数据集的目录的绝对路径。
 
@@ -69,7 +69,7 @@ bash scripts/ft_gpt.sh
 ## 🤗 **Model List**
 | Model|语言||简介|prompt|
 |:-|:-:|:-:|:--------------------------------------------:|:---------:|
-| [selmisskilig/piccolo-gpt-zh](https://huggingface.co/selmisskilig/piccolo-gpt-zh)                   |    Chinese     |   | version2: 采用了多任务混合损失进行训练 | None |
+| [selmisskilig/piccolo-gpt-zh](https://huggingface.co/selmisskilig/piccolo-gpt-zh)                   |    Chinese     |   | 采用了多任务混合损失进行训练 | None |
 
 
 ## Citation
